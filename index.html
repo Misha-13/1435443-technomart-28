@@ -9,7 +9,7 @@
     <a href="index.html">
       <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
     </a>
-    <a href="blank.html">Поиск:</a>
+    <input type="search" id="header-search" name="search" placeholder="Поиск:">
     <a href="blank.html">Закладки:</a>
     <a href="blank.html">Корзина:</a>
     <a href="blank.html">Оформить заказ</a>
@@ -31,9 +31,9 @@
     </nav>
   </header>
   <main>
-    <h1>Интернет-магазин «Техномарт»</h1> <!-- нужно будет скрыть -->
+    <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1> <!-- нужно будет скрыть -->
     <section>
-      <h2>Список товаров</h2><!-- нужно будет скрыть -->
+      <h2 class="visually-hidden">Список товаров</h2><!-- нужно будет скрыть -->
       <ul>
         <li>
           <h3>Материалы</h3>
@@ -57,7 +57,6 @@
         </li>
       </ul>
       <div> <!-- Слайдер -->
-        <button>&lt;</button>
         <ul>
           <li>
             <h4>Перфораторы</h4>
@@ -78,7 +77,8 @@
           <li>2</li> <!-- Один должен быть активным -->
         </ul>
         <!-- буллиты на слайдере -->
-        <button>&gt;</button>
+        <button type="button">Вперед</button>
+        <button type="button">Назад</button>
       </div> <!-- Слайдер -->
     </section>
     <section>
@@ -133,7 +133,7 @@
       <ul>
         <li>
           <a href="blank.html">
-            <h3>Bosh</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">Bosh</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/bosch-logo.png" width="126" height="37" alt="Bosch">
             </p>
@@ -141,7 +141,7 @@
         </li>
         <li>
           <a href="blank.html">
-            <h3>Makita</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">Makita</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/makita-logo.png" width="123" height="40" alt="Makita">
             </p>
@@ -149,7 +149,7 @@
         </li>
         <li>
           <a href="blank.html">
-            <h3>DeWalt</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">DeWalt</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/dewalt-logo.png" width="146" height="44" alt="DeWalt">
             </p>
@@ -157,7 +157,7 @@
         </li>
         <li>
           <a href="blank.html">
-            <h3>Интерскол</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">Интерскол</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/interskol-logo.png" width="200" height="88" alt="Интерскол">
             </p>
@@ -165,7 +165,7 @@
         </li>
         <li>
           <a href="blank.html">
-            <h3>Hitachi</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">Hitachi</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/hitachi-logo.png" width="169" height="31" alt="Hitachi">
             </p>
@@ -181,7 +181,7 @@
         </li>
         <li>
           <a href="blank.html">
-            <h3>AEG</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">AEG</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/aeg-logo.png" width="151" height="96" alt="AEG">
             </p>
@@ -189,7 +189,7 @@
         </li>
         <li>
           <a href="blank.html">
-            <h3>Metabo</h3><!-- нужно будет скрыть -->
+            <h3 class="visually-hidden">Metabo</h3><!-- нужно будет скрыть -->
             <p>
               <img src="img/metabo-logo.png" width="204" height="69" alt="Metabo">
             </p>
@@ -201,9 +201,9 @@
       <h2>СЕРВИСЫ</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать выши покупки приятными.</p>
       <ul>
-        <li><button>Доcтавка</button></li>
-        <li><button>Гарантия</button></li>
-        <li><button>Кредит</button></li>
+        <li><button type="button">Доcтавка</button></li>
+        <li><button type="button">Гарантия</button></li>
+        <li><button type="button">Кредит</button></li>
       </ul>
       <!-- Элементы активируется при клике по кнопке остальные должны быть в скрытом режиме -->
       <div>
@@ -224,7 +224,7 @@
           гарантии. Мы обменяем сгоревший товар на новый.<br>
           Дом уж восстановите как-нибудь сами.
         </p>
-      </div>>
+      </div>
       <div>
         <h3>Кредит</h3>
         <p>
@@ -232,7 +232,7 @@
           Кредитные консультанты придут вам на помощь.
         </p>
         <a href="blank.html">ОТПРАВИТЬ ЗАЯВКУ</a>
-      </div>>
+      </div>
       <!-- Элементы активируется при клике по кнопке остальные должны быть в скрытом режиме -->
     </section>
     <section>
@@ -258,7 +258,7 @@
         Вы можете забрать товар сами, заехав в наш офис:
       </p>
       <a href="blank.html"><img src="img/map.png" width="300" height="158" alt="Карта"></a>
-      <button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
+      <button type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
     </section>
   </main>
   <footer>
@@ -266,7 +266,7 @@
       <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
     </a>
     <section>
-      <h2>Адрес</h2> <!-- Потом надо будет скрыть -->
+      <h2 class="visually-hidden">Адрес</h2> <!-- Потом надо будет скрыть -->
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 16/8</p>
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     </section>
@@ -283,7 +283,7 @@
     </nav>
     <p>© 2010-2019 Компания «Техномарт» Все права защищены</p>
     <section>
-      <h2>Социальные сети</h2> <!-- Надо будет скрыть -->
+      <h2 class="visually-hidden">Социальные сети</h2> <!-- Надо будет скрыть -->
       <ul>
         <li>
           <a href="#">Вконтакте</a>
@@ -301,15 +301,27 @@
   </footer>
   <section>
     <h2>ОБРАТНАЯ СВЯЗЬ</h2>
-    <button>Закрыть</button>
-    <!-- Форма -->
-    <button>Отправить</button>
-    <!-- Форма -->
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="feedback-customer">Ваше имя</label>
+        <input type="text" id="feedback-customer" name="customer" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input type="email" id="feedback-email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="feedback-message">Текст письма:</label>
+        <input type="text" id="feedback-message" name="message" placeholder="В свободной форме">
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
   </section>
   <section>
     <h2>Карта</h2>
-    <button>Закрыть</button>
     <!-- Интерактивная карта -->
+    <button type="button">Закрыть</button>
   </section>
 </body>
 </html>

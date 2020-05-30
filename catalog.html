@@ -9,12 +9,12 @@
         <a href="index.html">
         <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
         </a>
-        <a href="blank.html">Поиск:</a>
+        <input type="search" id="header-search" name="search" placeholder="Поиск:">
         <a href="blank.html">Закладки:</a>
         <a href="blank.html">Корзина:</a>
         <a href="blank.html">Оформить заказ</a>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a href="tel:+">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 16/8</p>
         <a href="blank.html">Равшан Джамшутович</a>
         <ul>
@@ -48,31 +48,56 @@
             <h3>ЦЕНА:</h3>
             <span>Двойной ползунок</span>
             <p><output>0</output> - <output>30000</output></p>
-            <h3>ПРОИЗВОДИТЕЛИ:</h3> 
-            <!-- Здесь будет группа чекбоксов -->
-            <p>BOSH</p>
-            <p>ИНТЕРСКОЛ</p>
-            <p>MAKITA</p>
-            <p>DEWALT</p>
-            <p>HITACHI</p>
-            <!-- Здесь будет группа чекбоксов -->
-            <h3>ПИТАНИЕ:</h3>
-            <!-- Здесь будет два радиобатона -->
-            <p>АККУМУЛЯТОРНЫЕ</p>
-            <p>СЕТЕВЫЕ</p>
-            <!-- Здесь будет два радиобатона -->
-            <!-- Надо изменить при реализации формы --> 
-            <button>ПОКАЗАТЬ</button> <!-- Добавить функционал -->
-            <!-- Скорее всего здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <label for="filter-bosch">Bosch</label>
+                            <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                        </li>
+                        <li>
+                            <label for="filter-interskol">Интерскол</label>
+                            <input type="checkbox" name="interskol" id="filter-interskol">
+                        </li>
+                        <li>
+                            <label for="filter-makita">Makita</label>
+                            <input type="checkbox" name="makita" id="filter-makita" checked>
+                        </li>
+                        <li>
+                            <label for="filter-dewalt">DeWalt</label>
+                            <input type="checkbox" name="dewalt" id="filter-dewalt">
+                        </li>
+                        <li>
+                            <label for="filter-hitachi">Hitachi</label>
+                            <input type="checkbox" name="hitachi" id="filter-hitachi">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <label for="filter-wireless">Аккумуляторный</label>
+                            <input type="radio" name="power-type" id="filter-wireless" value="wireless" checked>
+                        </li>
+                        <li>
+                            <label for="filter-wire">Сетевые</label>
+                            <input type="radio" name="power-type" id="filter-wire" value="wire">
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
         </section>
         <section>
-            <h2>Список перфораторов</h2> <!-- Потом нужно будет скрыть -->
+            <h2 class="visually-hidden">Список перфораторов</h2> <!-- Потом нужно будет скрыть -->
             <p>Сортировка:</p>
-            <button>По цене</button>
-            <button>По тиу</button>
-            <button>По функционалу</button>
-            <button>По возрастанию</button> <!-- Заменить на треугольник -->
-            <button>По убыванию</button> <!-- Заменить на треугольник -->
+            <button type="button">По цене</button>
+            <button type="button">По тиу</button>
+            <button type="button">По функционалу</button>
+            <button type="button">По возрастанию</button> <!-- Заменить на треугольник -->
+            <button type="button">По убыванию</button> <!-- Заменить на треугольник -->
             <ul>
                 <li>
                     <a href="blank.html">
@@ -84,8 +109,8 @@
                         <p>25500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -98,8 +123,8 @@
                         <p>25500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -112,8 +137,8 @@
                         <p>25500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -126,8 +151,8 @@
                         <p>15500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -140,8 +165,8 @@
                         <p>25500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -154,8 +179,8 @@
                         <p>12500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -168,8 +193,8 @@
                         <p>15500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -182,8 +207,8 @@
                         <p>25500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
                 <li>
@@ -196,8 +221,8 @@
                         <p>12500 Р.</p>
                     </a>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
-                    <button>КУПИТЬ</button>
-                    <button>В ЗАКЛАДКИ</button>
+                    <button type="button">КУПИТЬ</button>
+                    <button type="button">В ЗАКЛАДКИ</button>
                     <!-- Отображаются при наведении на элемент списка (картинка скрывается)-->
                 </li>
             </ul>
@@ -222,9 +247,9 @@
           <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
         </a>
         <section>
-          <h2>Адрес</h2> <!-- Потом надо будет скрыть -->
+          <h2 class="visually-hidden">Адрес</h2> <!-- Потом надо будет скрыть -->
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 16/8</p>
-          <a href="tel:+">+7 (812) 555-05-55</a>
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </section>
         <nav>  
           <ul>
@@ -239,7 +264,7 @@
         </nav>
         <p>© 2010-2019 Компания «Техномарт» Все права защищены</p>
         <section>
-          <h2>Социальные сети</h2> <!-- Надо будет скрыть -->
+          <h2 class="visually-hidden">Социальные сети</h2> <!-- Надо будет скрыть -->
           <ul>
             <li>
               <a href="#">Вконтакте</a>
@@ -255,5 +280,12 @@
         <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p> 
         <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </footer>
+      <section>
+          <h2 class="visually-hidden">Добавить в корзину</h2>
+          <p>Товар добавлен в корзину</p>
+          <a href="blank.html">Оформить заказ</a>
+          <button type="button">Продолжить покупки</button>
+          <button type="button">Закрыть</button>
+      </section>
     </body>
 </html>

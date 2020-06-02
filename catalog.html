@@ -48,12 +48,32 @@
         </ul>
         <section>
             <h2>Фильтр:</h2>
-            <!-- Скорее всего здесь будет форма -->
-            <!-- Надо изменить при реализации формы -->
-            <h3>ЦЕНА:</h3>
-            <span>Двойной ползунок</span>
-            <p><output>0</output> - <output>30000</output></p>
             <form action="https://echo.htmlacademy.ru" method="GET">
+                <!-- Сделал по демке с небольшими правками -->
+                <fieldset class="filter-price">
+                    <legend class="filter-legend">Цена:</legend>
+                    <div class="filter-range">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label for="min-price">
+                                <span class="visually-hidden">от</span>
+                                <input type="number" id="min-price" name="min-price" value="0">
+                            </label>
+                            <span class="line">-</span>
+                            <label for="max-price">
+                                <span class="visually-hidden">до</span>
+                                <input type="number" id="max-price" name="max-price" value="30000">
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- Сделал по демке с небольшими правками -->
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>

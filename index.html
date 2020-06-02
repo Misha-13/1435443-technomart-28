@@ -9,7 +9,12 @@
     <a href="index.html">
       <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
     </a>
-    <input type="search" id="header-search" name="search" placeholder="Поиск:">
+    <form action="https://echo.htmlacademy.ru" method="GET">
+      <label>
+        <span class="visually-hidden">Поиск:</span>
+        <input type="search" id="header-search" name="search" placeholder="Поиск:">
+      </label>
+    </form>
     <a href="blank.html">Закладки:</a>
     <a href="blank.html">Корзина:</a>
     <a href="blank.html">Оформить заказ</a>
@@ -258,7 +263,7 @@
         Вы можете забрать товар сами, заехав в наш офис:
       </p>
       <a href="blank.html"><img src="img/map.png" width="300" height="158" alt="Карта"></a>
-      <button type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
+      <a href="blank.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
     </section>
   </main>
   <footer>
@@ -312,7 +317,7 @@
       </p>
       <p>
         <label for="feedback-message">Текст письма:</label>
-        <input type="text" id="feedback-message" name="message" placeholder="В свободной форме">
+        <textarea name="message" id="feedback-message" cols="30" rows="5" placeholder="В свободной форме"></textarea>
       </p>
       <button type="submit">Отправить</button>
     </form>

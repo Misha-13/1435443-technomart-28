@@ -1,0 +1,241 @@
+/* Variables */
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+    --header-background: #F3F7F9;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --special-greylight: #EAEAEA;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--basic-black);
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: block;
+    background-color: var(--basic-red);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    line-height: 0;
+}
+
+.logo a:active {
+    background-color: var(--error);
+}
+
+.red-button {
+    font: inherit;
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-red);
+    padding: 0;
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+
+.red-button:active {
+    background-color: var(--error);
+}
+
+.white-button {
+    font: inherit;
+    color: var(--basic-blacks);
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--basic-white);
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.white-button:active {
+    color: var(--basic-greylight);
+}
+
+/* Header */
+
+.common-header {
+    background-color: var(--header-background);
+}
+
+.common-header-top-area {
+    background-color: #293449;
+    color: var(--basic-white);
+}
+
+.common-header-top-area a {
+    color: var(--basic-white);
+}
+
+.header-bar input {
+    background-color: inherit;
+    border: none;
+}
+
+.header-bar input::placeholder {
+    color:var(--basic-white);
+}
+
+.header-bar input:focus {
+    background-color: var(--basic-white);
+    outline: none;
+}
+
+.header-bar-element:active {
+    background-color: #161D29;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-order {
+    background-color: var(--basic-green);
+}
+
+.header-order:hover {
+    background-color: var(--success);
+}
+
+.header-order:active {
+    background-color: var(--basic-green);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.info {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+
+.phone p {
+    font-size: 14px;
+    color: #32425C;
+}
+
+.phone a {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+    border: 3px solid #FFFFFF;
+}
+
+.header-navigation {
+    background-color: #32425C;
+    box-shadow: inset 0px -5px 0px #293449;
+}
+
+.header-navigation ul{
+    list-style: none;
+}
+
+.header-navigation a {
+    color: var(--basic-white);
+}
+
+.header-navigation a:hover {
+    background-color: #293449;
+}
+
+.header-navigation a:active {
+    background-color: #1D2739;
+    opacity: 0.5;
+}
+
+/* Main */
+
+.index-column h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.index-column p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+.index-column ul {
+    list-style: none;
+}
+
+/* Footer */
+
+.common-footer {
+    background-color: #32425C;
+}
+
+.common-footer ul{
+    list-style: none;
+}
+
+.common-footer a:hover {
+    text-decoration: underline;
+}
+
+.common-footer a:active {
+    text-decoration: none;
+}
+
+.footer-top,
+.footer-top a {
+    color: var(--basic-background);
+}
+
+.footer-top a:active {
+    opacity: 0.5;
+}
+
+.special-list a,
+.footer-bottom a {
+    color: var(--special-yellowlight);
+}
+
+.footer-bottom {
+    background: #293449;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.footer-bottom a:active {
+    color: var(--basic-red);
+}
+
+.socials a {
+    background-color: #212A3A;
+}
+
+.socials a:hover {
+    background-color: var(--basic-red);
+}

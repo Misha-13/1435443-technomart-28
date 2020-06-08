@@ -79,6 +79,10 @@ img {
     padding-bottom: 12px;
 }
 
+.white-button:hover {
+    color: var(--basic-red);
+}
+
 .white-button:active {
     color: var(--basic-greylight);
 }
@@ -110,6 +114,10 @@ img {
 .header-bar input:focus {
     background-color: var(--basic-white);
     outline: none;
+}
+
+.filled {
+    background-color: var(--basic-red);
 }
 
 .header-bar-element:active {
@@ -238,4 +246,171 @@ img {
 
 .socials a:hover {
     background-color: var(--basic-red);
+}
+
+/* ---Catalog--- */
+
+/* Catalog-header */
+
+.username-button:hover {
+    color: var(--basic-black);
+}
+
+.username-button:active {
+    color: var(--basic-greylight);
+}
+
+.user-features a, 
+.user-features li {
+    color: #32425C;
+}
+
+.user-features a:hover,
+.user-features li:hover {
+    color: var(--basic-red);
+}
+
+.user-features a:active,
+.user-features li:active {
+    color: var(--basic-greylight);
+}
+
+.user-features li:first-child {
+    list-style: none;
+}
+
+/* Catalog-Main */
+
+.page-title {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425C;
+}
+
+.breadcrumbs {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    /*list-style-image: url("img/icon-right-small.svg");*/
+}
+
+.breadcrumbs li:first-child {
+    list-style: none;
+}
+
+/* Catalog-Filter */
+
+.filter-button {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #E5E5E5;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.filter legend {
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter ul {
+    list-style: none;
+    font-family: PT Sans;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+/* Catalog-items */
+
+.catalog {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.item-list {
+    list-style: none;
+}
+
+.item-list li {
+    border: 1px solid var(--special-greylight);
+}
+
+.item-list li:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item-list h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.item-list del {
+    color: #A9A9A9;
+    text-transform: uppercase;
+}
+
+.price p{
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.item-buttons {
+    display: none;
+}
+
+li:hover .item-buttons {
+    display: block;
+}
+
+.item-buttons a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.buy-button {
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    box-shadow: inset 0px -3px 0px var(--basic-green);
+    border-radius: 2px;
+}
+
+.buy-button:hover {
+    background-color: var(--success);
+}
+
+.buy-button:active {
+    background-color: #518534;
+}
+
+.bookmark-button {
+    color: #32425C;
+    border: 3px solid var(--basic-green);
+    border-radius: 2px;
+}
+
+.bookmark-button:hover {
+    border-color: #32425C;
+}
+
+.bookmark-button:active {
+    opacity: 0.5;
 }

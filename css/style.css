@@ -124,7 +124,8 @@ img {
 }
 
 .search-bar::placeholder {
-    color:var(--basic-white);
+    color: var(--basic-white);
+    opacity: 1; /* для Firefox */
 }
 
 .search-bar:focus {

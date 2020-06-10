@@ -378,12 +378,14 @@ img {
 }
 
 .item-list del {
+    font-weight: bold;
     color: var(--rare-greylight);
     text-transform: uppercase;
 }
 
 .price p{
     background-color: var(--basic-red);
+    font-weight: bold;
     color: var(--basic-white);
     text-transform: uppercase;
 }

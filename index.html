@@ -50,61 +50,61 @@
   </header>
   <main>
     <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1> <!-- нужно будет скрыть -->
-    <section>
+    <section class="index-promo">
       <h2 class="visually-hidden">Список товаров</h2><!-- нужно будет скрыть -->
-      <ul>
-        <li>
+      <ul class="promo-list">
+        <li class="promo-list-materials">
           <h3>Материалы</h3>
-          <a href="blank.html">На любой вкус</a>
+          <a href="blank.html" class="transparent-button">На любой вкус</a>
         </li>
-        <li>
+        <li class="promo-list-tools">
           <h3>Инструменты</h3>
-          <a href="blank.html">На все случаи</a>
+          <a href="blank.html" class="transparent-button">На все случаи</a>
         </li>
-        <li>
+        <li class="promo-list-equipments">
           <h3>Техника</h3>
-          <a href="blank.html">Для стройки</a>
+          <a href="blank.html" class="transparent-button">Для стройки</a>
         </li>
-        <li>
+        <li class="promo-list-discount">
           <h3>Скидка 50%</h3>
-          <a href="blank.html">На 350 товаров</a>
+          <a href="blank.html" class="transparent-button">На 350 товаров</a>
         </li>
-        <li>
+        <li class="promo-list-delivery">
           <h3>Доставка</h3>
-          <a href="blank.html">Бесплатно</a>
+          <a href="blank.html" class="transparent-button">Бесплатно</a>
         </li>
       </ul>
-      <div> <!-- Слайдер -->
-        <ul>
-          <li>
-            <h4>Перфораторы</h4>
-            <p>Настоящие мужские игрушки</p>
-            <img src="img/slide-1.jpg" width="620" height="266" alt="">
-            <a href="blank.html">Открыть каталог</a>
-          </li>
-          <li>
+      <div class="slider"> <!-- Слайдер -->
+        <ul class="slider-list">
+          <li class="slide">
             <h4>Дрели</h4>
             <p>Соседям на радость!</p>
             <img src="img/slide-2.jpg" width="620" height="266" alt="">
-            <a href="blank.html">Открыть каталог</a>
+            <a href="blank.html" class="red-button">Открыть каталог</a>
+          </li>
+          <li class="slide current-slide">
+            <h4>Перфораторы</h4>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/slide-1.jpg" width="620" height="266" alt="">
+            <a href="blank.html" class="red-button">Открыть каталог</a>
           </li>
         </ul>
         <!-- буллиты на слайдере -->
-        <div>
-          <button type="button">Слайд 1</button>
-          <button type="button">Слайд 2</button>
+        <div class="slider-controls">
+          <button type="button" aria-label="Слайд 1"></button>
+          <button type="button" class="current-slide-button" aria-label="Слайд 2"></button>
         </div>
         <!-- буллиты на слайдере -->
-        <div>
-          <button type="button">Вперед</button>
-          <button type="button">Назад</button>
+        <div class="slider-move">
+          <button type="button" class="slider-forward" aria-label="Вперед"></button>
+          <button type="button" class="slider-backward" aria-label="Назад"></button>
         </div>
       </div> <!-- Слайдер -->
     </section>
-    <section>
-      <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-      <a href="blank.html">Все популярные товары</a>
-      <ul>
+    <section class="popular-goods">
+      <h2 class="heading-with-button">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+      <a href="blank.html" class="red-button">Все популярные товары</a>
+      <ul class="item-list">
         <li>
           <a href="blank.html">
             <h3>Перфоратор BOSH BFG 9000</h3>
@@ -112,8 +112,12 @@
               <img src="img/bosch-9000.jpg" width="144" height="128" alt="BOSH BFG 9000">
             </p>
             <del>32500 Р.</del> <!-- Старая цена-->
-            <p>25500 Р.</p>
+            <div class="price"><p>25500 Р.</p></div>
           </a>
+          <div class="item-buttons">
+            <a href="blank.html" class="buy-button">купить</a>
+            <a href="blank.html" class="bookmark-button">в закладки</a>
+          </div>
         </li>
         <li>
           <a href="blank.html">
@@ -122,8 +126,12 @@
               <img src="img/bosch-3000.jpg" width="144" height="128" alt="BOSH BFG 3000">
             </p>
             <del>22500 Р.</del> <!-- Старая цена-->
-            <p>15500 Р.</p>
+            <div class="price"><p>15500 Р.</p></div>
           </a>
+          <div class="item-buttons">
+            <a href="blank.html" class="buy-button">купить</a>
+            <a href="blank.html" class="bookmark-button">в закладки</a>
+          </div>
         </li>
         <li>
           <a href="blank.html">
@@ -132,8 +140,12 @@
               <img src="img/bosch-6000.jpg" width="144" height="128" alt="BOSH BFG 6000">
             </p>
             <del>30500 Р.</del> <!-- Старая цена-->
-            <p>25500 Р.</p>
+            <div class="price"><p>25500 Р.</p></div>
           </a>
+          <div class="item-buttons">
+            <a href="blank.html" class="buy-button">купить</a>
+            <a href="blank.html" class="bookmark-button">в закладки</a>
+          </div>
         </li>
         <li>
           <a href="blank.html">
@@ -142,15 +154,19 @@
               <img src="img/bosch-2000.jpg" width="144" height="128" alt="BOSH BFG 2000">
             </p>
             <del></del> <!-- Старая цена-->
-            <p>12500 Р.</p>
+            <div class="price"><p>12500 Р.</p></div>
           </a>
+          <div class="item-buttons">
+            <a href="blank.html" class="buy-button">купить</a>
+            <a href="blank.html" class="bookmark-button">в закладки</a>
+          </div>
         </li>
       </ul>
     </section>
     <section>
-      <h2>ПОПУЛЯРНЫЕ ПРОИЗВОЛИТЕЛИ:</h2>
-      <a href="blank.html">Все производители</a>
-      <ul>
+      <h2 class="heading-with-button">ПОПУЛЯРНЫЕ ПРОИЗВОЛИТЕЛИ:</h2>
+      <a href="blank.html" class="red-button">Все производители</a>
+      <ul class="supplier-list">
         <li>
           <a href="blank.html">
             <h3 class="visually-hidden">Bosh</h3><!-- нужно будет скрыть -->
@@ -217,19 +233,19 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="service">
       <h2>СЕРВИСЫ</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать выши покупки приятными.</p>
-      <ul>
+      <ul class="service-list">
         <!--<li><button type="button">Доcтавка</button></li>
         <li><button type="button">Гарантия</button></li>
         <li><button type="button">Кредит</button></li>-->
-        <li><a href="blank.html">Доcтавка</a></li>
+        <li><a href="blank.html" class="service-list-active">Доcтавка</a></li>
         <li><a href="blank.html">Гарантия</a></li>
         <li><a href="blank.html">Кредит</a></li>
       </ul>
       <!-- Элементы активируется при клике по кнопке остальные должны быть в скрытом режиме -->
-      <div>
+      <div class="service-slide service-delivery service-slide-current">
         <h3>Доставка</h3>
         <p>
           Мы с удовольствием доставим ваш товар прямо<br>
@@ -238,7 +254,7 @@
           поднимая его на ваш этаж!
         </p>
       </div>
-      <div>
+      <div class="service-slide service-guarantee">
         <h3>Гарантия</h3>
         <p>
           Если купленный у нас товар поломается или заискрит,<br>
@@ -248,13 +264,13 @@
           Дом уж восстановите как-нибудь сами.
         </p>
       </div>
-      <div>
+      <div class="service-slide service-credit">
         <h3>Кредит</h3>
         <p>
           Залезть в долговую яму стало проще!<br>
           Кредитные консультанты придут вам на помощь.
         </p>
-        <a href="blank.html">ОТПРАВИТЬ ЗАЯВКУ</a>
+        <a href="blank.html" class="red-button">ОТПРАВИТЬ ЗАЯВКУ</a>
       </div>
       <!-- Элементы активируется при клике по кнопке остальные должны быть в скрытом режиме -->
     </section>

@@ -148,6 +148,8 @@ img {
     box-shadow: 
     0px 4px 20px rgba(0, 0, 0, 0.15),
     inset 0px -112px 0px rgba(244, 244, 244);
+    z-index: 99;
+    animation: bounce 0.9s;
 }
 
 .modal .red-button {
@@ -169,7 +171,6 @@ img {
 
 .modal-write-us {
     width: 613px;
-    height: 430px;
     margin-left: -306px;
 }
 
@@ -178,8 +179,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 39px;
-    margin-bottom: 37px;
+    padding-top: 34px;
+    padding-bottom: 37px;
 }
 
 .form-write-us p {
@@ -192,10 +193,8 @@ img {
 }
 
 .form-write-us .red-button {
-    position: absolute;
-    width: 460px;
-    left: 80px;
-    bottom: 37px;
+    margin-top: 74px;
+    width: 100%;
 }
 
 .input-write-us {
@@ -220,7 +219,7 @@ img {
     padding-right: 8px;
     padding-bottom: 7px;
     padding-left: 12px;
-    resize: none;
+    resize: vertical;
 }
 
 .modal-map {
@@ -243,8 +242,16 @@ img {
     justify-content: stretch;
     align-items: center;
     width: 620px;
-    height: 283px;
+    /*height: 283px;*/
     margin-left: -310px;
+}
+
+.modal-buy-container {
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 35px;
 }
 
 .modal-buy .modal-close {
@@ -255,14 +262,17 @@ img {
 .modal-buy-button {
     width: 395px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    position: absolute;
-    bottom: 37px;
+    margin-top: 87px;
+    box-sizing: content-box;
+    /*position: absolute;
+    bottom: 37px;*/
 }
 
 .modal-buy-button a {
     box-sizing: border-box;
-    width: 192px;
+    min-width: 192px;
     height: 38px;
     margin: 0;
     padding: 0;
@@ -272,7 +282,7 @@ img {
 
 .modal-buy-button button {
     box-sizing: border-box;
-    width: 192px;
+    min-width: 192px;
     height: 38px;
     margin: 0;
     padding: 0;
@@ -284,12 +294,13 @@ img {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .modal-buy-info {
     display: flex;
     justify-content: center;
-    padding-top: 48px;
+    /*padding-top: 48px;*/
 }
 
 .modal-buy-info  p {
@@ -299,6 +310,10 @@ img {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
+}
+
+.modal-error {
+    animation: shake 0.8s;
 }
 
 .modal-hidden {
@@ -421,14 +436,14 @@ img {
 
 /* Дополняем Main */
 
-/*.promo-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}*/
-
 .promo-list {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 23px;
+    padding-right: 110px;
+    padding-top: 20px;
+    padding-bottom: 21px;
 }
 
 .promo-list h3 {
@@ -440,14 +455,6 @@ img {
     padding: 0;
     margin: 0;
     margin-bottom: 14px;
-}
-
-.promo-list-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 23px;
-    padding-top: 20px;
 }
 
 .promo-list-materials {
@@ -2188,3 +2195,45 @@ input[type="radio"]:disabled + label {
     padding-top: 7px;
     padding-bottom: 4px;
 }
+
+/* Animations */
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(5%);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }

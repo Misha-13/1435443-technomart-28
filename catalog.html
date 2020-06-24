@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="ru" id="html-catalog">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:ital,wght@0,400;0,700;1,400%7CPT+Sans:wght@0,400;0,700">
@@ -370,15 +370,18 @@
     </footer>
     <section class="modal modal-buy modal-hidden">
         <h2 class="visually-hidden">Добавить в корзину</h2>
-            <div class="modal-buy-info">
-                <img src="img/icon-mark.svg" alt="">
-                <p>Товар добавлен в корзину</p>
-            </div>
-            <div class="modal-buy-button">
-                <a href="blank.html" class="red-button">Оформить заказ</a>
-                <button type="button" class="white-button">Продолжить покупки</button>
-            </div>
+        <div class="modal-buy-container">
+          <div class="modal-buy-info">
+              <img src="img/icon-mark.svg" alt="">
+              <p>Товар добавлен в корзину</p>
+          </div>
+          <div class="modal-buy-button">
+              <a href="blank.html" class="red-button">Оформить заказ</a>
+              <button type="button" class="white-button" name="buy-proceed">Продолжить покупки</button>
+          </div>
+        </div>  
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
+    <script src="js/scripts.js"></script>
     </body>
 </html>

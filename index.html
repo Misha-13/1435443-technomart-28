@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="ru" id="html-index">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:ital,wght@0,400;0,700;1,400%7CPT+Sans:wght@0,400;0,700">
@@ -56,34 +56,24 @@
       <div class="grid-container">
         <h2 class="visually-hidden">Список товаров</h2>
           <div class="promo-list promo-list-materials new">
-            <div class="promo-list-info">
-              <h3>Материалы</h3>
-              <a href="blank.html" class="transparent-button">На любой вкус</a>
-            </div>
+            <h3>Материалы</h3>
+            <a href="blank.html" class="transparent-button">На любой вкус</a>
           </div>
           <div class="promo-list promo-list-tools">
-            <div class="promo-list-info">
-              <h3>Инструменты</h3>
-              <a href="blank.html" class="transparent-button">На все случаи</a>
-            </div>
+            <h3>Инструменты</h3>
+            <a href="blank.html" class="transparent-button">На все случаи</a>
           </div>
           <div class="promo-list promo-list-equipments">
-            <div class="promo-list-info">
-              <h3>Техника</h3>
-              <a href="blank.html" class="transparent-button">Для стройки</a>
-            </div>
+            <h3>Техника</h3>
+            <a href="blank.html" class="transparent-button">Для стройки</a>
           </div>
           <div class="promo-list promo-list-discount">
-            <div class="promo-list-info">
-              <h3>Скидка 50%</h3>
-              <a href="blank.html" class="transparent-button">На 350 товаров</a>
-            </div>
+            <h3>Скидка 50%</h3>
+            <a href="blank.html" class="transparent-button">На 350 товаров</a>
           </div>
           <div class="promo-list promo-list-delivery">
-            <div class="promo-list-info">
-              <h3>Доставка</h3>
-              <a href="blank.html" class="transparent-button">Бесплатно</a>
-            </div>
+            <h3>Доставка</h3>
+            <a href="blank.html" class="transparent-button">Бесплатно</a>
           </div>
         <div class="slider">
           <ul class="slider-list">
@@ -324,7 +314,7 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <a href="blank.html" class="map"><img src="img/map.png" width="300" height="158" alt="Карта"></a>
-          <a href="blank.html" class="red-button">Заблудились? Напишите нам!</a>
+          <a href="blank.html" class="red-button" id="index-write-us-link">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -390,24 +380,25 @@
     <form action="https://echo.htmlacademy.ru" method="POST" class="form-write-us">
       <p>
         <label for="feedback-customer">Ваше имя</label>
-        <input type="text" id="feedback-customer" name="customer" placeholder="Имя Фамилия" class="input-write-us">
+        <input type="text" id="feedback-customer" name="customer" placeholder="Имя Фамилия" class="input-write-us" autocomplete="off">
       </p>
       <p>
         <label for="feedback-email">Ваш e-mail:</label>
-        <input type="email" id="feedback-email" name="email" placeholder="email@example.com" class="input-write-us">
+        <input type="email" id="feedback-email" name="email" placeholder="email@example.com" class="input-write-us" autocomplete="off">
       </p>
       <p>
         <label for="feedback-message">Текст письма:</label>
-        <textarea name="message" id="feedback-message" cols="30" rows="5" placeholder="В свободной форме" class="textarea-write-us"></textarea>
+        <textarea name="message" id="feedback-message" cols="30" rows="5" placeholder="В свободной форме" class="textarea-write-us" autocomplete="off"></textarea>
       </p>
       <button type="submit" class="red-button">Отправить</button>
     </form>
-    <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    <button type="button" class="modal-close" name="close-write-us" aria-label="Закрыть"></button>
   </section>
   <section class="modal modal-map modal-hidden">
     <h2 class="visually-hidden">Карта</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.414821830412!2d30.32195305824809!3d59.938717839057865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592469890237!5m2!1sru!2sru" width="943" height="442" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-    <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    <button type="button" class="modal-close" name="close-map" aria-label="Закрыть"></button>
   </section>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

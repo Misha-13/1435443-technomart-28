@@ -195,6 +195,7 @@ img {
 .form-write-us .red-button {
     margin-top: 74px;
     width: 100%;
+    cursor: pointer;
 }
 
 .input-write-us {

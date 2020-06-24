@@ -56,6 +56,8 @@ if (pageIndex) {
             if (isStorageSupport) {
                 localStorage.setItem("userName", nameWriteUs.value);
                 localStorage.setItem("userEmail", emailWriteUs.value);
+                writeUsPopup.classList.add("modal-hidden"); //для Firefox
+                writeUsPopup.classList.remove("modal-error"); // для Firefox
             }
         }
     });

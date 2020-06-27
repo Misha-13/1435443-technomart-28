@@ -1,5 +1,5 @@
-var pageIndex = document.querySelector("html[id=html-index]");
-var pageCatalog = document.querySelector("html[id=html-catalog]");
+var pageIndex = document.getElementById("html-index");
+var pageCatalog = document.getElementById("html-catalog");
 
 var isStorageSupport = true;
 var storageName = "";

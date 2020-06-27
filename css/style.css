@@ -28,6 +28,7 @@
     --rare-filterheading: #F7F3EC;
     --success: #5FBB2D;
     --warning: #FFBF47;
+    --red-button-hover: #CA2C37;
     --error: #BA2732;
     --heading-special: #f9f5f0;
 }
@@ -84,6 +85,10 @@ img {
     text-transform: uppercase;
 }
 
+.red-button:hover {
+    background-color: var(--red-button-hover);
+}
+
 .red-button:active {
     background-color: var(--error);
 }
@@ -135,8 +140,13 @@ img {
 
 .modal {
     position: fixed;
-    top: 5%;
+    /*top: 5%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +181,6 @@ img {
 
 .modal-write-us {
     width: 613px;
-    margin-left: -306px;
 }
 
 .form-write-us {
@@ -225,7 +234,6 @@ img {
 
 .modal-map {
     width: 943px;
-    margin-left: -471px;
 }
 
 .modal-map .modal-close {
@@ -243,8 +251,6 @@ img {
     justify-content: stretch;
     align-items: center;
     width: 620px;
-    /*height: 283px;*/
-    margin-left: -310px;
 }
 
 .modal-buy-container {
@@ -267,8 +273,6 @@ img {
     justify-content: space-between;
     margin-top: 87px;
     box-sizing: content-box;
-    /*position: absolute;
-    bottom: 37px;*/
 }
 
 .modal-buy-button a {
@@ -301,7 +305,6 @@ img {
 .modal-buy-info {
     display: flex;
     justify-content: center;
-    /*padding-top: 48px;*/
 }
 
 .modal-buy-info  p {
@@ -377,9 +380,11 @@ img {
 }
 
 .info {
+    min-height: 71px;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
+    vertical-align: middle;
     color: var(--basic-red);
 }
 
@@ -424,6 +429,7 @@ img {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .index-column p {
@@ -443,7 +449,7 @@ img {
     justify-content: space-between;
     padding-left: 23px;
     padding-right: 110px;
-    padding-top: 20px;
+    padding-top: 21px;
     padding-bottom: 21px;
 }
 
@@ -547,7 +553,7 @@ img {
 }
 
 .slide-info h4 {
-    margin-bottom: 5px;
+    margin-bottom: 5.5px;
 }
 
 .slide-perforator {
@@ -585,27 +591,28 @@ img {
     cursor: pointer;
     position: absolute;
     z-index: 1;
-    top: 114px;
+    top: 122px;
 }
 
 .slider-forward {
     background: transparent;
     background-image: url("../img/icon-right.svg");
     background-repeat: no-repeat;
-    right: 20px;
+    right: 21px;
 }
 
 .slider-backward {
     background: transparent;
     background-image: url("../img/icon-left.svg");
     background-repeat: no-repeat;
-    left: 20px;
+    left: 24px;
 }
 
 .heading-with-button {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;
     text-transform: uppercase;
     color: var(--special-grey);
     margin: 0;
@@ -1289,8 +1296,10 @@ input[type="radio"]:disabled + label {
 .logo {
     box-sizing: border-box;
     width: 220px;
-    text-align: center;
-    padding-top: 12px;
+    /*text-align: center;*/
+    padding-left: 55px;
+    padding-right: 57px;
+    padding-top: 13px;
     padding-bottom: 12px;
 }
 
@@ -1302,7 +1311,8 @@ input[type="radio"]:disabled + label {
     width: 270px;
     min-height: 42px;
     padding: 0;
-    padding-left: 42px;
+    padding-left: 42.5px;
+    line-height: 18px;
 }
 
 .search-bar {
@@ -1319,19 +1329,19 @@ input[type="radio"]:disabled + label {
     box-sizing: border-box;
     position: relative;
     width: 150px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 .bookmark {
-    padding-left: 43px;
-    padding-right: 24px;
+    padding-left: 43.5px;
+    padding-right: 23.5px;
 }
 
 .bookmark::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 20px;
     width: 14px;
     height: 16px;
@@ -1342,8 +1352,8 @@ input[type="radio"]:disabled + label {
 }
 
 .cart {
-    padding-left: 49px;
-    padding-right: 26px;
+    padding-left: 49.5px;
+    padding-right: 25.5px;
 }
 
 .cart::before {
@@ -1372,8 +1382,8 @@ input[type="radio"]:disabled + label {
 .header-order {
     box-sizing: border-box;
     width: 150px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 10px;
+    padding-bottom: 8px;
     padding-left: 19px;
     padding-right: 16px;
 }
@@ -1406,6 +1416,7 @@ input[type="radio"]:disabled + label {
     flex-direction: column;
     align-items: center;
     margin-left: 94px;
+    padding-top: 2px;
 }
 
 .phone a {
@@ -1413,7 +1424,7 @@ input[type="radio"]:disabled + label {
     padding-top: 4px;
     padding-bottom: 5px;
     padding-right: 42px;
-    padding-left: 71px;
+    padding-left: 70px;
 }
 
 .phone a::before {
@@ -1421,8 +1432,8 @@ input[type="radio"]:disabled + label {
     position: absolute;
     width: 19px;
     height: 19px;
-    top: 13px;
-    left: 40px;
+    top: 10px;
+    left: 36px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1431,6 +1442,7 @@ input[type="radio"]:disabled + label {
 .phone p {
     margin: 0;
     margin-top: 3px;
+    text-align: center;
 }
 
 .header-login {
@@ -1443,11 +1455,12 @@ input[type="radio"]:disabled + label {
     justify-content: flex-end;
     /*margin-left: 69px;*/
     margin-left: 50px;
+    padding-top: 2px;
 }
 
 .enter {
     position: relative;
-    padding-right: 27px;
+    padding-right: 26px;
     padding-left: 45px;
     margin-left: 11px;
 }
@@ -1457,7 +1470,7 @@ input[type="radio"]:disabled + label {
     position: absolute;
     width: 20px;
     height: 17px;
-    left: 19px;
+    left: 18px;
     top: 14px;
     background-image: url("../img/icon-login-blue.svg");
     background-repeat: no-repeat;
@@ -1523,15 +1536,22 @@ input[type="radio"]:disabled + label {
     flex-direction: row;
     flex-wrap: wrap;
     width: 890px;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    /*padding-left: 25px;
+    /*padding-right: 23px;*/
+    justify-content: space-between;
     padding-left: 25px;
-    padding-right: 23px;
+    padding-right: 22px;
 }
 
 .header-navigation-list a {
     display: block;
-    padding-top: 16px;
+    /*padding-top: 16px;
     padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 27px;*/
+    padding-top: 17px;
+    padding-bottom: 19px;
     padding-right: 24px;
     padding-left: 27px;
 }
@@ -1561,7 +1581,7 @@ input[type="radio"]:disabled + label {
 }
 
 .slide a {
-    padding-left: 46px;
+    padding-left: 47px;
     padding-right: 46px;
 }
 
@@ -1614,14 +1634,19 @@ input[type="radio"]:disabled + label {
     align-items: center;
     justify-content: space-between;
     background-color: var(--heading-special);
-    padding-top: 29px;
-    padding-bottom: 30px;
+    /*padding-top: 29px;
+    padding-bottom: 30px;*/
+    padding-top: 26px;
+    padding-bottom: 25px;
     padding-right: 14px;
     padding-left: 28px;
-    margin-bottom: 28px;
+    /*margin-bottom: 28px;*/
+    margin-bottom: 20px;
 }
 
 .header-container .red-button {
+    min-width: 192px;
+    box-sizing: border-box;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -1658,8 +1683,10 @@ input[type="radio"]:disabled + label {
     box-sizing: border-box;
     width: 185px;
     text-align: center;
-    padding-left: 15px;
+    /*padding-left: 15px;
     padding-right: 15px;
+    padding-left: 13px;*/
+    padding-top: 16px;
     margin: 0;
     margin-bottom: 7px;
 }
@@ -1667,8 +1694,9 @@ input[type="radio"]:disabled + label {
 .goods-preview {
     box-sizing: border-box;
     display: flex;
-    width: 220px;
-    min-height: 157px;
+    /*width: 220px;*/
+    width: 205px;
+    height: 157px;
     padding: 2px;
     justify-content: center;
     align-items: center;
@@ -1676,15 +1704,22 @@ input[type="radio"]:disabled + label {
 
 .goods-price-info {
     display: flex;
-    min-height: 122px;
+    /*width: 205px;
+    width: 100%;*/
+    min-height: 133px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
 .goods-price-info del {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
     min-height: 24px;
-    margin-bottom: 13px;
+    margin-bottom: 8px;
 }
 
 .price {
@@ -1715,8 +1750,10 @@ input[type="radio"]:disabled + label {
 
 .item-list-goods {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .popular-supplier {
@@ -1771,6 +1808,7 @@ input[type="radio"]:disabled + label {
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
+    font-weight: normal;
 }
 
 .service p {
@@ -1817,8 +1855,8 @@ input[type="radio"]:disabled + label {
 
 .service-list-item {
     display: block;
-    padding-top: 13.5px;
-    padding-bottom: 17.5px;
+    padding-top: 17px;
+    padding-bottom: 16px;
     padding-left: 22px;
 }
 
@@ -1840,6 +1878,7 @@ input[type="radio"]:disabled + label {
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
+    font-weight: normal;
 }
 
 .service-slide p {
@@ -1877,7 +1916,7 @@ input[type="radio"]:disabled + label {
 .index-column {
     margin: 0;
     padding: 0;
-    margin-top: 70px;
+    margin-top: 71px;
     margin-bottom: 70px;
     display: flex;
     justify-content: center;
@@ -1934,7 +1973,7 @@ input[type="radio"]:disabled + label {
 }
 
 .about-us p:not(:last-of-type) {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 }
 
 .about-us .red-button {
@@ -1957,7 +1996,7 @@ input[type="radio"]:disabled + label {
     padding: 0;
     margin: 0;
     margin-top: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
 }
 
 .common-footer {
@@ -1981,14 +2020,11 @@ input[type="radio"]:disabled + label {
     margin-bottom: 54px;
 }
 
-.footer-top-left-column {
-    width: 324px;
-}
-
 .footer-contacts {
     padding: 0;
     margin: 0;
-    margin-top: 22px;
+    margin-top: 30px;
+    padding-left: 3px;
 }
 
 .footer-contacts p,
@@ -2058,8 +2094,7 @@ input[type="radio"]:disabled + label {
     height: 44px;
     border-radius: 50%;
     text-align: center;
-    margin-left: 1px;
-    margin-right: 1px;
+    padding-right: 1px;
 }
 
 .footer-email {
@@ -2176,8 +2211,10 @@ input[type="radio"]:disabled + label {
 .new::before {
     content: "NEW";
     position: absolute;
-    right: -30px;
-    top: 5px;
+    /*right: -30px;
+    top: 5px;*/
+    right: -27px;
+    top: 8px;
     width: 100px;
     height: 30px;
     box-sizing: border-box;
@@ -2201,26 +2238,26 @@ input[type="radio"]:disabled + label {
 
 @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+      transform: translate(calc(-50% + 0.5px), -2000px);
     }
   
     70% {
-      transform: translateY(30px);
+      transform: translate(calc(-50% + 0.5px), 30px);
     }
   
     90% {
-      transform: translateY(-10px);
+      transform: translate(calc(-50% + 0.5px), -10px);
     }
   
     100% {
-      transform: translateY(5%);
+      transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
     }
   }
 
   @keyframes shake {
     0%,
     100% {
-      transform: translateX(0);
+        transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
     }
   
     10%,
@@ -2228,13 +2265,13 @@ input[type="radio"]:disabled + label {
     50%,
     70%,
     90% {
-      transform: translateX(-10px);
+        transform: translate(calc(-55% + 0.5px), calc(-50% + 0.5px));
     }
   
     20%,
     40%,
     60%,
     80% {
-      transform: translateX(10px);
+        transform: translate(calc(-45% + 0.5px), calc(-50% + 0.5px));
     }
   }

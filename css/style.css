@@ -29,6 +29,7 @@
     --success: #5FBB2D;
     --warning: #FFBF47;
     --red-button-hover: #CA2C37;
+    --buy-button-border: #367315;
     --error: #BA2732;
     --heading-special: #f9f5f0;
 }
@@ -65,8 +66,7 @@ img {
     line-height: 0;
 }
 
-.logo:active,
-.logo-footer:active {
+.logo:active {
     background-color: var(--error);
 }
 
@@ -134,8 +134,6 @@ img {
 
 .transparent-button:active {
     background-color: rgba(169, 169, 169, 0.3);
-    padding-top: 4px;
-    padding-bottom: 6px;
 }
 
 .modal {
@@ -713,6 +711,11 @@ img {
     opacity: 0.5;
 }
 
+.footer-top .logo-footer:active {
+    background-color: var(--error);
+    opacity: 1;
+}
+
 .special-list a,
 .footer-bottom a {
     color: var(--special-yellowlight);
@@ -1153,11 +1156,16 @@ input[type="radio"]:disabled + label {
 .buy-button {
     color: var(--basic-white);
     background-color: var(--basic-green);
-    box-shadow: inset 0px -3px 0px var(--basic-green);
+    box-shadow: inset 0px -3px 0px var(--buy-button-border);
     border-radius: 2px;
     text-align: center;
+    padding-left: 53px;
+    padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-image: url("../img/icon-cart-buy.svg");
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
 }
 
 .buy-button:hover {

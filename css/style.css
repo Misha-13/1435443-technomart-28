@@ -30,6 +30,7 @@
     --warning: #FFBF47;
     --red-button-hover: #CA2C37;
     --buy-button-border: #367315;
+    --logo-border: #B52933;
     --error: #BA2732;
     --heading-special: #f9f5f0;
 }
@@ -61,8 +62,7 @@ img {
 .logo-footer {
     display: block;
     background-color: var(--basic-red);
-    /*box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);*/
-    box-shadow: 0px 5px 0px #b52933;
+    box-shadow: 0px 5px 0px var(--logo-border);
     line-height: 0;
 }
 
@@ -138,10 +138,6 @@ img {
 
 .modal {
     position: fixed;
-    /*top: 5%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
     top: 50%;
     left: 50%;
     transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
@@ -614,9 +610,6 @@ img {
     color: var(--special-grey);
     margin: 0;
     padding: 0;
-    /*padding-top: 29px;
-    padding-bottom: 30px;
-    padding-left: 28px;*/
     background-color: var(--heading-special);
 }
 
@@ -835,7 +828,6 @@ img {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
-    /*list-style-image: url("../img/icon-right-small.svg");*/
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -872,7 +864,6 @@ img {
     min-height: 720px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     justify-content: flex-start;
 }
 
@@ -1472,11 +1463,8 @@ input[type="radio"]:disabled + label {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    /*width: 281px;*/
     width: 300px;
-    /*justify-content: space-between;*/
     justify-content: flex-end;
-    /*margin-left: 69px;*/
     margin-left: 50px;
     padding-top: 2px;
 }
@@ -1521,7 +1509,6 @@ input[type="radio"]:disabled + label {
     height: 17px;
     right: 17px;
     top: 14px;
-    /*background-image: url("../img/icon-login-blue.svg");*/
     background-image: url("../img/icon-logout-blue.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1560,9 +1547,6 @@ input[type="radio"]:disabled + label {
     flex-direction: row;
     flex-wrap: wrap;
     width: 890px;
-    /*justify-content: space-around;*/
-    /*padding-left: 25px;
-    /*padding-right: 23px;*/
     justify-content: space-between;
     padding-left: 25px;
     padding-right: 22px;
@@ -1570,10 +1554,6 @@ input[type="radio"]:disabled + label {
 
 .header-navigation-list a {
     display: block;
-    /*padding-top: 16px;
-    padding-bottom: 20px;
-    padding-right: 24px;
-    padding-left: 27px;*/
     padding-top: 17px;
     padding-bottom: 19px;
     padding-right: 24px;
@@ -1658,13 +1638,10 @@ input[type="radio"]:disabled + label {
     align-items: center;
     justify-content: space-between;
     background-color: var(--heading-special);
-    /*padding-top: 29px;
-    padding-bottom: 30px;*/
     padding-top: 26px;
     padding-bottom: 25px;
     padding-right: 14px;
     padding-left: 28px;
-    /*margin-bottom: 28px;*/
     margin-bottom: 20px;
 }
 
@@ -1707,9 +1684,6 @@ input[type="radio"]:disabled + label {
     box-sizing: border-box;
     width: 185px;
     text-align: center;
-    /*padding-left: 15px;
-    padding-right: 15px;
-    padding-left: 13px;*/
     padding-top: 16px;
     margin: 0;
     margin-bottom: 7px;
@@ -1718,7 +1692,6 @@ input[type="radio"]:disabled + label {
 .goods-preview {
     box-sizing: border-box;
     display: flex;
-    /*width: 220px;*/
     width: 205px;
     height: 157px;
     padding: 2px;
@@ -1728,8 +1701,6 @@ input[type="radio"]:disabled + label {
 
 .goods-price-info {
     display: flex;
-    /*width: 205px;
-    width: 100%;*/
     min-height: 133px;
     flex-direction: column;
     justify-content: space-between;
@@ -1866,11 +1837,10 @@ input[type="radio"]:disabled + label {
     margin: 0;
     padding-top: 45px;
     padding-bottom: 45px;
-    /*margin-right: -10px;*/
 }
 
 .service-list::after {
-    content: url(../img/service-line.svg);
+    content: url("../img/service-line.svg");
     position: absolute;
     top: 0;
     right: 0;
@@ -1887,15 +1857,12 @@ input[type="radio"]:disabled + label {
 .service-items {
     flex-grow: 1;
     margin-left: 80px;
-    /*padding-top: 45px;
-    padding-bottom: 45px;*/
 }
 
 .service-slide {
     position: relative;
     min-height: 283px;
     padding-top: 45px;
-    /*padding-bottom: 45px;*/
 }
 
 .service-slide h3 {
@@ -2120,7 +2087,6 @@ input[type="radio"]:disabled + label {
     height: 40px;
     border-radius: 50%;
     text-align: center;
-    /*padding-right: 1px;*/
 }
 
 .footer-email {
@@ -2180,7 +2146,6 @@ input[type="radio"]:disabled + label {
 .sorting-list {
     width: 458px;
     display: flex;
-    /*justify-content: space-between;*/
     justify-content: flex-end;
     text-transform: uppercase;
     padding-right: 15px;
@@ -2254,8 +2219,6 @@ input[type="radio"]:disabled + label {
 .new::before {
     content: "NEW";
     position: absolute;
-    /*right: -30px;
-    top: 5px;*/
     right: -27px;
     top: 8px;
     width: 100px;
@@ -2263,7 +2226,7 @@ input[type="radio"]:disabled + label {
     box-sizing: border-box;
     background-color: var(--basic-red);
     transform: rotate(45deg);
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2318,6 +2281,8 @@ input[type="radio"]:disabled + label {
         transform: translate(calc(-45% + 0.5px), calc(-50% + 0.5px));
     }
   }
+
+  /* Fix */
 
   .vk {
       background-image: url("../img/icon-vk.svg");

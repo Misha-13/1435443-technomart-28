@@ -76,6 +76,7 @@ if (pageIndex) {
     mapLink.addEventListener("click", function(evt) {
         evt.preventDefault();
         mapPopup.classList.remove("modal-hidden");
+        closeMap.focus();
     });
 
     closeMap.addEventListener("click", function() {
@@ -98,12 +99,14 @@ if (pageCatalog) {
     var buyPopup = document.querySelector(".modal-buy");
     var buyClose = buyPopup.querySelector(".modal-close");
     var buyProceed = buyPopup.querySelector("button[name=buy-proceed]");
+    var buyOrder = document.getElementById("buy-order");
 
     const buyLinks = document.querySelectorAll(".buy-button");
 
     buyLinks.forEach((buyLink) => buyLink.addEventListener("click", function(evt) {
         evt.preventDefault();
         buyPopup.classList.remove("modal-hidden");
+        buyOrder.focus();
     }));
 
     buyClose.addEventListener("click", function() {

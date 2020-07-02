@@ -158,7 +158,11 @@ img {
 
 .modal .red-button {
     border: none;
-    outline: none;
+}
+
+.modal .red-button:focus,
+.modal .white-button:focus {
+    outline: 1px dotted var(--basic-black);
 }
 
 .modal-close {
@@ -171,6 +175,10 @@ img {
     background: transparent;
     background-image: url("../img/icon-close.svg");
     cursor: pointer;
+}
+
+.modal-close:focus {
+    outline: 1px dotted var(--basic-black);
 }
 
 .modal-write-us {
@@ -443,7 +451,7 @@ img {
     padding-left: 23px;
     padding-right: 110px;
     padding-top: 21px;
-    padding-bottom: 21px;
+    padding-bottom: 20px;
 }
 
 .promo-list h3 {
@@ -904,7 +912,7 @@ img {
     width: 20px;
     height: 22px;
     border: none;
-    outline: none;
+    
     background: transparent;
     background-image: url("../img/filter-button.svg");
     cursor: pointer;
@@ -950,7 +958,7 @@ img {
     -webkit-appearance: none;
 }
 
-.price-controls  input[type='number'] {
+.price-controls  input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -1048,7 +1056,7 @@ img {
     padding-left: 35px;
 }
 
-input[type="checkbox"] + label::before {
+.custom-checkbox + label::before {
     content: "";
     position: absolute;
     top: -2px;
@@ -1059,11 +1067,11 @@ input[type="checkbox"] + label::before {
     background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:checked + label::before {
+.custom-checkbox:checked + label::before {
     background-image: url("../img/checkbox-on.svg");
 }
 
-input[type="radio"] + label::before {
+.custom-radio + label::before {
     content: "";
     position: absolute;
     top: -3px;
@@ -1074,15 +1082,20 @@ input[type="radio"] + label::before {
     background-repeat: no-repeat;
 }
 
-input[type="radio"]:checked + label::before {
+.custom-radio:checked + label::before {
     background-image: url("../img/radio-on.svg");
 }
 
-input[type="checkbox"]:disabled + label::before,
-input[type="checkbox"]:disabled + label,
-input[type="radio"]:disabled + label::before,
-input[type="radio"]:disabled + label {
+.custom-checkbox:disabled + label::before,
+.custom-checkbox:disabled + label,
+.custom-radio:disabled + label::before,
+.custom-radio:disabled + label {
     opacity: 0.3;
+}
+
+.custom-radio + label:focus,
+.custom-checkbox + label:focus {
+    outline: 3px dotted var(--basic-black);
 }
 
 .legend-supplier {
@@ -1570,6 +1583,7 @@ input[type="radio"]:disabled + label {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
+    background-color: var(--rare-greylight);
 }
 
 .slider-list {
@@ -1618,7 +1632,7 @@ input[type="radio"]:disabled + label {
     display: grid;
     width: 940px;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 123px 123px 123px;
+    grid-template-rows: 1fr;
     grid-gap: 20px;
 }
 
@@ -2033,6 +2047,7 @@ input[type="radio"]:disabled + label {
 
 .footer-navigation ul {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     justify-content: space-between;
